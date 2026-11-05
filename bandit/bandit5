@@ -1,0 +1,9 @@
+ls
+
+cd inhere
+
+ls -la
+
+find . -type f -exec file {} +
+
+cat ./-file07

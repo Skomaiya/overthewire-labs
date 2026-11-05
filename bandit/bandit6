@@ -1,0 +1,9 @@
+ls
+
+cd inhere
+
+ls -la
+
+find -size 1033
+
+cat ./maybehere07/.file
