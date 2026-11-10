@@ -1,0 +1,17 @@
+ls
+
+cd /tmp/
+
+mktemp -d
+
+cd /tmp/{$temp_directory}
+
+cp ~/data.txt .
+
+file data.txt
+
+xxd -r data.txt {$filename}
+
+file {$filename}
+
+#Find the compression type and then move file to new file with compression type suffix eg gz for gzip, or bz2 for bzip2 or .tar for posix tar. Decompress file using appropriate commands eg gzip -d {$filename} or bzip2 -d {$filename}, or tar -xvf {$filename} based on file suffix previously given. Print file using cat, when file type is ASCII text.
